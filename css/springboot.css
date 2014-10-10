@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.reveal small .name {
+	position: relative;
+	top: 20px;
+	padding-left: 5px;
+}
+
+.reveal .slides section .footer {
+	font-size: 14px;
+	margin-bottom:5px;
+	float:left;
+}
+
+.reveal .slides section .footer  img{
+	float:right;
+}
+
+.reveal .slides section .footer span {
+	text-align:center;
+	width: 700px;
+	margin-top:15px;
+	float:left;
+}
+
+.reveal .slides section .header .leftmargin {
+	float:left;
+	margin-left:5%;
+}
+
+.reveal .slides section .header .rightmargin {
+	float:right;
+	margin-right:5%;
+}
+
+.reveal .slides section .content {
+	min-height: 400px;
+	position: relative;
+}
+
+.reveal .slides section .content .green {
+	color: #3ABA3A;
+	text-align: left;
+} 
+
+.reveal .slides section .content .space {
+	float: left;
+	margin-top: 30px;	
+} 
+
+.reveal .slides section .content img.pos {
+	position: absolute;
+	left:80%;
+}
+
+.reveal .slides section .content .left {
+	float:left;
+	text-align:center;
+	width: 70%;
+}
+
+.reveal .slides section .content .full {
+	width: 100%;
+}
+
+.reveal .slides section .content .left .textalignleft  {
+	text-align: left;
+}
+.reveal .slides section .content .left span.textleft  {
+	float: left;
+	width: 100%;
+}
+
+.reveal .slides section .content .right {
+	float:right;
+	text-align:center;
+	width: 30%;
+}
+
+.reveal .slides section .content .right ul {
+	width: 100%;
+}
+
+.reveal .slides section .content .right span {
+	text-align:left;
+	margin-left:10px;
+	float:left;
+	width: 105%;
+}
+
+.reveal .slides section .content div.pos {
+	position: absolute;
+	top:5%;
+	width:35%
+}
+
+.reveal .slides section .content div.posright img.pt{
+	position:relative;
+	margin:0;
+	border:0;
+}
+
+.reveal .slides section .content div.posright {
+	left:8%;
+	margin: 3px;
+}
+
+.reveal .slides section .content div.posleft {
+	left:56%;
+	top:10%;
+}
