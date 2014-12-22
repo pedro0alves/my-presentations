@@ -10,6 +10,7 @@
 	font-size: 14px;
 	margin-bottom:5px;
 	float:left;
+	padding-left: 5%;
 }
 
 .reveal .slides section .footer  img{
@@ -17,8 +18,8 @@
 }
 
 .reveal .slides section .footer span {
-	text-align:center;
-	width: 700px;
+	text-align:left;
+	width: 695px;
 	margin-top:15px;
 	float:left;
 }
