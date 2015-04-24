@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>BEKK Fagdag 6. mars: 100 lyntaler</title>
+		<title>BEKK Fagdag <strike>6. mars</strike> 4. september 2015: 100 lyntaler</title>
 
 		<meta name="description" content="Widget. Ja, Bekk-ere kan!">
 		<meta name="author" content="Pedro Alves">
@@ -51,55 +51,203 @@
 							Widget<br />Ja, Bekk-ere kan!
 						</a>
 					<h1>
-					<h3>BEKK Fagdag 6. mars: 100 lyntaler</h3>
+					<h3>BEKK Fagdag <strike>6. mars</strike> 4. september: 100 lyntaler</h3>
 					<h3>med Pedro Alves</h3>
 					<div class="footer">
-						<span>BEKK Fagdag 6. mars: 100 lyntaler</span>
+						<span>BEKK Fagdag <strike> 6. mars</strike> 4. september: 100 lyntaler</span>
 						<a href="http://www.bekk.no"><img width="150" class="" src="images/bekklogo.png" alt="Bekk icon" /></a>
 					</div>
 				</section>
 				
 				<!-- tema -->
 				<section>
-					<h2>Hva skal dere høre <br />i neste 10 minutter!</h2>
-					
-					<div class="footer">
-						<span>BEKK Fagdag 6. mars: 100 lyntaler</span>
-						<a href="http://www.bekk.no"><img width="150" class="" src="images/bekklogo.png" alt="Bekk icon" /></a>
-					</div>
+					<h2>Hva skal dere høre i neste 10 minutter!</h2>
+					<div class="content">
+						<ul>
+							<li>Hva er min mål?</li>
+							<li>Hva skal widgeten gjøre?</li>
+							<li>Hva er widgeten oppskrift?</li>
+							<li>Hva er widgeten fremgangsmåte?</li>
+							<li>Hvordan oppdaterer global widget style and script filer?</li>
+							<li>Hvordan samtaler widgeten?</li>
+						</ul>
+					</div>					
 				</section>
 				
-				<!-- presentasjon om tema -->
+				<!-- presentasjon -->
 				<section>
-					<h2>...</h2>
-				
-					<div class="footer">
-						<span>BEKK Fagdag 6. mars: 100 lyntaler</span>
-						<a href="http://www.bekk.no"><img width="150" class="" src="images/bekklogo.png" alt="Bekk icon" /></a>
+					<h2>Hva er min mål?</h2>
+					<div class="content">
+						<ul>
+							<li>Ja, Bekkere kan!</li>
+						</ul>
 					</div>
 				</section>
+				
+				<!-- presentasjon -->
+				<section>
+					<h2>Wha skal widgeten gjøre?</h2>
+					<div class="content">
+						<img width="1000" class="rightmargin" src="images/widget/widget.jpg" alt="Foredrag" />
+					</div>
+				</section>
+				
+				<!-- presentasjon -->
+				<section>
+					<h2>Hva er widgeten oppskrift?</h2>
+					<div class="content">
+						<ul>
+							<li>Controller<br />..\Controllers\"Navn_Controller"</li>
+							<li>View<br />							    
+								<code>..\Views\"Controller_Navn"\"Action_Navn".cshtml<br /></code>					
+								<code><!--section data-component="Widget_Navn">...</section--></code>
+						    </li>
+							<li>Widget layout<br />..\Web\Styles\components\"Widget_Navn"</li>
+							<li>Widget innhold<br />..\Web\Scripts\components\"Widget_Navn"</li>
+						</ul>
+					</div>
+				</section>
+				
+				<!-- presentasjon -->
+				<section>
+					<h2>Hva er widgeten fremgangsmåte?</h2>
+					<div class="content">
+						<ul>
+							<li>
+							Widget layout<br />
+							Index.less<br />
+							..\Web\Styles\components\_index.less			 
+							</li><br />
+							<li>
+							Widget innhold<br />
+							Main:		"Widget_Navn".js<br />
+							View:     	"Widget_Navn"View.js<br />
+							Model:    	"Widget_Navn"Model.js<br />
+							Template: 	"Widget_Navn".hbs<br />
+							Andre filer "Navn".*<br /><br />
+							..\Web\Scripts\components\loader.js<br />
+							document.querySelectorAll("*[data-component]");<br />
+							</li>
+						</ul>
+					</div>
+				</section>
+				
+				<!-- presentasjon -->
+				<section>
+					<h3>..\Controllers\SocialCastController.cs</h3>
+					<div class="content">
+					Controller ...
+					</code>						
+					</div>
+				</section>				
+
+				<!-- presentasjon -->
+				<section>
+					<h2>../Views/SocialCast/Index.cshtml</h2>
+					<div class="content">
+					View ...
+					</code>						
+					</div>
+				</section>				
+
+				<!-- presentasjon -->
+				<section>
+					<h4>..\Web\Scripts\components\socialcast\socialcast.hbs</h4>
+					<div class="content">
+					Template ...
+					</code>						
+					</div>
+				</section>				
+
+				<!-- presentasjon -->
+				<section>
+					<h4>..\Web\Scripts\components\socialcast\socialcast.js </h4>
+					<div class="content">
+					JS ...
+					</code>						
+					</div>
+				</section>				
+
+				<!-- presentasjon -->
+				<section>
+					<h4>..\Web\Scripts\components\socialcast\socialcastView.js </h4>
+					<div class="content">
+					JS ...
+					</code>						
+					</div>
+				</section>				
+
+				<!-- presentasjon -->
+				<section>
+					<h4>..\Bekk.Forside.Web\Web\Styles\components\socialcast\index.less </h4>
+					<div class="content">
+					CSS ...
+					</code>						
+					</div>
+				</section>				
+				
+				<!-- presentasjon -->
+				<section>
+					<h2>Hvordan oppdaterer global widget style and script filer? </h2>
+					<div class="content">
+					<ul>
+						<li>
+						kjører "gulp" kommand
+						<ol>
+							<li>..\gulpfile.js fil vil være samtale;</li>
+							<li>Det skal bygge hele widgeter i BekkForside prosjekt; </li>
+							<li>
+							..\Content\js\app.bundle.js<br />
+							..\Content\css\style.bundle.css<br /> 
+							Merk: Filene opp skal være oppdatere og de er lokal filene.
+							</li>
+						</ol>
+						</li>
+						<br />
+						<li>
+						..\package.json fil<br />
+						package.json skal fikset avhengighet av require(str).<br />
+						Det ligger i ..\node_modules\*
+						</li>
+					</ul>
+					</code>						
+					</div>
+				</section>				
+                	
+				<!-- presentasjon -->
+				<section>
+					<h2>Hvordan samtaler widgeten? </h2>
+					<div class="content">
+					<ul>
+						<li>
+						Setter din widget i ..\Views\Home\Index.cshtml
+						</li>
+						<br />
+						<code>
+						@{   
+							Html.RenderAction("Action_Navn","Controller_Navn"); 
+						}
+						</code>
+					</ul>
+					</div>
+				</section>		
 				
 				<!-- Konklusjon -->
 				<section>
 					<h2>Kan BEKKere <br />utenfor Forvaltning <br />lage sine egne widgeter?</h2>
-					
-					<div class="footer">
-						<span>BEKK Fagdag 6. mars: 100 lyntaler</span>
-						<a href="http://www.bekk.no"><img width="150" class="" src="images/bekklogo.png" alt="Bekk icon" /></a>
-					</div>
 				</section>
 				
-				<!-- Innskriften -->
-				<!--
+				<!-- Referanse -->
 				<section>
-					<h2>...</h2>
-				
-					<div class="footer">
-						<span>BEKK Fagdag 6. mars: 100 lyntaler</span>
-						<a href="http://www.bekk.no"><img width="150" class="" src="images/bekklogo.png" alt="Bekk icon" /></a>
+					<h2>Hvor dere finner mer informasjoner</h2>
+					<div class="content">
+						<ul>
+							<li><a href="https://nanna.bekk.no/confluence/display/BF/Widget-tutorial">Tutorial om Widget</a> (Confluence)</li>
+							<li><a href="https://github.com/bekk/bekk-forside">Koden av BekkForside prosjekt</a> (GitHub)</li>
+							<li><a href="https://intern.bekk.no/Forside/">Eksempler av Widget</a></li>
+						</ul>
 					</div>
 				</section>
-				-->
 				
 				<!-- Slutte -->
 				<section>
@@ -114,15 +262,12 @@
 								<br /><a href="http://twitter.com/alvespedro0">@alvespedro0</a>
 							</small>
 						</div>
-						<!--div class="right pos posleft"><small></small></div-->
 					</div>
-					
 					<div class="footer">
-						<span>BEKK Fagdag 6. mars: 100 lyntaler</span>
+						<span>BEKK Fagdag <strike> 6. mars</strike> 4. september: 100 lyntaler</span>
 						<a href="http://www.bekk.no"><img width="150" class="" src="images/bekklogo.png" alt="Bekk icon" /></a>
 					</div>
 				</section>
-				
 				
 			</div>
 
